@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <img class="pics mario" src="./images/mario.png" alt="">
+        <img class="pics brain" src="./images/brain.png" alt="">
+        <img class="pics blocks" src="./images/blocks.png" alt="">
+        <img class="pics dog" src="./images/dog.png" alt="">
+        <div class="container">
+            <h2 class="heading">"Mario's Mind Game"</h2>
+            <button class="btn new" onClick="window.location.reload();">New Game</button>;
+            <button class="btn start" onClick="audio5.play();">Start</button>
+
+            <div class="details">
+                <h1>Your score: </h1>
+                <h1 class="score">0</h1>
+
+                <h1>Time left: </h1>
+                <h1 class="time-left">32</h1>
+            </div>
+
+            <div class="cards" onClick="audio1.play();">
+                <div class="card up" pokemon="h"><img src="./images/green.png" alt=""></div>
+                <div class="card up" pokemon="a"><img src="./images/red.png" alt=""></div>
+                <div class="card up" pokemon="b"><img src="./images/star.png" alt=""></div>
+                <div class="card up" pokemon="c"><img src="./images/rflower.png" alt=""></div>
+                <div class="card mid-1" pokemon="d"><img src="./images/penguin.png" alt=""></div>
+                <div class="card mid-1" pokemon="g"><img src="./images/bell.png" alt=""></div>
+                <div class="card mid-1" pokemon="f"><img src="./images/berries.png" alt=""></div>
+                <div class="card mid-1" pokemon="h"><img src="./images/green.png" alt=""></div>
+                <div class="card mid-2" pokemon="e"><img src="./images/leaf.png" alt=""></div>
+                <div class="card mid-2" pokemon="a"><img src="./images/red.png" alt=""></div>
+                <div class="card mid-2" pokemon="b"><img src="./images/star.png" alt=""></div>
+                <div class="card mid-2" pokemon="c"><img src="./images/rflower.png" alt=""></div>
+                <div class="card down" pokemon="d"><img src="./images/penguin.png" alt=""></div>
+                <div class="card down" pokemon="g"><img src="./images/bell.png" alt=""></div>
+                <div class="card down" pokemon="f"><img src="./images/berries.png" alt=""></div>
+                <div class="card down" pokemon="e"><img src="./images/leaf.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
